@@ -1,1 +1,5 @@
-Dropbox/dotfiles/.ackrc
+--type-add=php=inc
+--type-add=html=ftl
+--type-add=vb=brs
+--type-set=puppet=pp
+--no-group
