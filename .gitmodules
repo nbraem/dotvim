@@ -1,3 +1,15 @@
 [submodule "bundle/mru"]
 	path = bundle/mru
-	url = https://github.com/vim-scripts/mru.vim.git
+	url = git://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/align"]
+	path = bundle/align
+	url = git://github.com/vim-scripts/Align.git
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = git://github.com/widox/vim-buffer-explorer-plugin.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git
