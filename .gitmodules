@@ -13,3 +13,9 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/julia"]
+	path = bundle/julia
+	url = git://github.com/JuliaLang/julia-vim.git
+[submodule "bundle/detectindent"]
+	path = bundle/detectindent
+	url = git://github.com/ciaranm/detectindent.git

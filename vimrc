@@ -66,6 +66,7 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 set switchbuf=useopen     " when switching to a buffer that is already open in a window, switch to the window
+set tags=tags;/           " search recursively upwards for tags file
 
 if version >= 703
   set undofile
@@ -93,6 +94,7 @@ if has('autocmd')
   autocmd filetype ruby setlocal sw=2 softtabstop=2
   autocmd BufReadPost quickfix setlocal nobuflisted " don't list quickfix window buffer
   autocmd BufNewFile,BufRead *.brs setf vb
+  autocmd BufReadPost * :DetectIndent
   "autocmd BufWritePre *.rb :%s/\s\+$//e
 endif
 
@@ -118,3 +120,4 @@ nnoremap Y y$
 " Plugin options
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 let MRU_Max_Entries = 100
+let MRU_Use_Current_Window = 1 
