@@ -19,3 +19,6 @@
 [submodule "bundle/detectindent"]
 	path = bundle/detectindent
 	url = git://github.com/ciaranm/detectindent.git
+[submodule "bundle/rvm"]
+	path = bundle/rvm
+	url = git://github.com/tpope/vim-rvm.git
