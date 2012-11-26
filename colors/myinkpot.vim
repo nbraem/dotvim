@@ -103,6 +103,7 @@ if has('gui_running')
         hi MatchParen   gui=NONE      guifg=#404040   guibg=#8fff8b
     endif
 elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
+    " mapped bright blue (ansi 12) to #3e3e5e, changed 235 bg to 12
     hi   Normal                        cterm=NONE        ctermfg=NONE   ctermbg=NONE
     hi   IncSearch                     cterm=BOLD        ctermfg=235    ctermbg=173
     hi   Search                        cterm=NONE        ctermfg=235    ctermbg=173
@@ -113,16 +114,16 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     hi   Question                      cterm=BOLD        ctermfg=220    ctermbg=NONE
 
     "hi   StatusLine                    cterm=BOLD        ctermfg=249    ctermbg=17
-    hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=235
+    "hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=235
+    "hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=60
+    hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=12
     hi   User1                         cterm=BOLD        ctermfg=48     ctermbg=235
     hi   User2                         cterm=BOLD        ctermfg=61     ctermbg=235
-    hi   StatusLineNC                  cterm=NONE        ctermfg=249    ctermbg=235
-    hi   VertSplit                     cterm=NONE        ctermfg=249    ctermbg=235
     "hi   StatusLine                    cterm=BOLD        ctermfg=249    ctermbg=235
-    hi   User1                         cterm=BOLD        ctermfg=48     ctermbg=235
-    hi   User2                         cterm=BOLD        ctermfg=61     ctermbg=235
-    hi   StatusLineNC                  cterm=NONE        ctermfg=249    ctermbg=235
-    hi   VertSplit                     cterm=NONE        ctermfg=249    ctermbg=235
+    hi   User1                         cterm=BOLD        ctermfg=48     ctermbg=12
+    hi   User2                         cterm=BOLD        ctermfg=61     ctermbg=12
+    hi   StatusLineNC                  cterm=NONE        ctermfg=249    ctermbg=12
+    hi   VertSplit                     cterm=NONE        ctermfg=249    ctermbg=12
 
     hi   WildMenu                      cterm=BOLD        ctermfg=254    ctermbg=61
     hi   MBENormal                     cterm=NONE        ctermfg=181    ctermbg=16
@@ -144,7 +145,7 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     hi   NonText                       cterm=BOLD        ctermfg=104    ctermbg=NONE
     hi   SpecialKey                    cterm=BOLD        ctermfg=135    ctermbg=NONE
     hi   Title                         cterm=BOLD        ctermfg=131    ctermbg=NONE
-    hi   Visual                        cterm=NONE        ctermfg=254    ctermbg=60
+    hi   Visual                        cterm=NONE        ctermfg=254    ctermbg=61
     hi   Comment                       cterm=NONE        ctermfg=172    ctermbg=NONE
     hi   Constant                      cterm=NONE        ctermfg=222    ctermbg=NONE
     hi   String                        cterm=NONE        ctermfg=222    ctermbg=237

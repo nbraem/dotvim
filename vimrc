@@ -15,7 +15,7 @@ syntax on
 set nocompatible          " don't care about vi
 set hidden                " hide buffers instead of closing
 set backspace=2           " allow backspacing over autoindent, line breaks and start of insert
-set cmdheight=3           " expand command area to 3 lines
+set cmdheight=2           " expand command area to 3 lines
 
 set number                " show line numbers
 set ruler                 " show line number in status
@@ -73,7 +73,7 @@ if version >= 703
   set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 endif
 
-set statusline=%<\ %{fnamemodify(getcwd(),\":~\")}\>\ %f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+set statusline=%<\ %{fnamemodify(getcwd(),\":~\")}\>\ %f\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%m%r%y%=%c,%l/%L\ %P
 
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " Set up grep
