@@ -116,8 +116,19 @@ map gr :grep <cword> <CR>
 "make Y consistent with C and D
 nnoremap Y y$
 
+" change cursor in insert mode
+" ONLY WORKS in iTerm2!
+if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " Plugin options
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 let MRU_Max_Entries = 100
 let MRU_Use_Current_Window = 1 
+
