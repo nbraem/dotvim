@@ -134,3 +134,7 @@ endif
 let MRU_Max_Entries = 100
 let MRU_Use_Current_Window = 1 
 
+" gitgutter colors
+highlight lineAdded    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=235
+highlight lineModified guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=235
+highlight lineRemoved  guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=235

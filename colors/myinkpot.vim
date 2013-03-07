@@ -52,6 +52,7 @@ if has('gui_running')
 
     hi Directory      gui=NONE   guifg=#00ff8b   guibg=NONE
     hi LineNr         gui=NONE   guifg=#8b8bcd   guibg=#2e2e2e
+    hi SignColumn     gui=NONE   guifg=#8b8bcd   guibg=#2e2e2e
     hi NonText        gui=BOLD   guifg=#8b8bcd   guibg=NONE
     hi SpecialKey     gui=BOLD   guifg=#ab60ed   guibg=NONE
     hi Title          gui=BOLD   guifg=#af4f4b   guibg=NONE
@@ -142,6 +143,7 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     hi   FoldColumn                    cterm=NONE        ctermfg=104    ctermbg=235
     hi   Directory                     cterm=NONE        ctermfg=48     ctermbg=NONE
     hi   LineNr                        cterm=NONE        ctermfg=104    ctermbg=235
+    hi   SignColumn                    cterm=NONE        ctermfg=104    ctermbg=235
     hi   NonText                       cterm=BOLD        ctermfg=104    ctermbg=NONE
     hi   SpecialKey                    cterm=BOLD        ctermfg=135    ctermbg=NONE
     hi   Title                         cterm=BOLD        ctermfg=131    ctermbg=NONE
@@ -184,6 +186,5 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     hi   SpellCap                      cterm=undercurl   ctermfg=NONE   ctermbg=NONE
     hi   MatchParen                    cterm=NONE        ctermfg=237    ctermbg=120
 endif
-
 
 " vim: set et :
