@@ -116,6 +116,9 @@ map gr :grep <cword> <CR>
 "make Y consistent with C and D
 nnoremap Y y$
 
+"map gp to select pasted text
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
 " change cursor in insert mode
 " ONLY WORKS in iTerm2!
 "if exists('$ITERM_PROFILE')
