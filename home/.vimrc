@@ -94,7 +94,6 @@ if has('autocmd')
   autocmd filetype ruby setlocal sw=2 softtabstop=2
   autocmd BufReadPost quickfix setlocal nobuflisted " don't list quickfix window buffer
   autocmd BufNewFile,BufRead *.brs setf vb
-  autocmd BufReadPost * :DetectIndent
   "autocmd BufWritePre *.rb :%s/\s\+$//e
 endif
 
