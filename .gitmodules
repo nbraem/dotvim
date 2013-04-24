@@ -1,3 +1,6 @@
+[submodule "home/.vim/bundle/coffee-script"]
+	path = home/.vim/bundle/coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "home/.vim/bundle/mru"]
 	path = home/.vim/bundle/mru
 	url = git://github.com/vim-scripts/mru.vim.git
@@ -13,18 +16,6 @@
 [submodule "home/.vim/bundle/surround"]
 	path = home/.vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "home/.vim/bundle/julia"]
-	path = home/.vim/bundle/julia
-	url = git://github.com/JuliaLang/julia-vim.git
-[submodule "home/.vim/bundle/detectindent"]
-	path = home/.vim/bundle/detectindent
-	url = git://github.com/ciaranm/detectindent.git
-[submodule "home/.vim/bundle/rvm"]
-	path = home/.vim/bundle/rvm
-	url = git://github.com/tpope/vim-rvm.git
 [submodule "home/.vim/bundle/gitgutter"]
 	path = home/.vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "home/.vim/bundle/coffee-script"]
-	path = home/.vim/bundle/coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
