@@ -1,27 +1,27 @@
-[submodule "bundle/mru"]
-	path = bundle/mru
+[submodule "home/.vim/bundle/mru"]
+	path = home/.vim/bundle/mru
 	url = git://github.com/vim-scripts/mru.vim.git
-[submodule "bundle/align"]
-	path = bundle/align
+[submodule "home/.vim/bundle/align"]
+	path = home/.vim/bundle/align
 	url = git://github.com/vim-scripts/Align.git
-[submodule "bundle/bufexplorer"]
-	path = bundle/bufexplorer
+[submodule "home/.vim/bundle/bufexplorer"]
+	path = home/.vim/bundle/bufexplorer
 	url = git://github.com/widox/vim-buffer-explorer-plugin.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
+[submodule "home/.vim/bundle/nerdcommenter"]
+	path = home/.vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/surround"]
-	path = bundle/surround
+[submodule "home/.vim/bundle/surround"]
+	path = home/.vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/julia"]
-	path = bundle/julia
+[submodule "home/.vim/bundle/julia"]
+	path = home/.vim/bundle/julia
 	url = git://github.com/JuliaLang/julia-vim.git
-[submodule "bundle/detectindent"]
-	path = bundle/detectindent
+[submodule "home/.vim/bundle/detectindent"]
+	path = home/.vim/bundle/detectindent
 	url = git://github.com/ciaranm/detectindent.git
-[submodule "bundle/rvm"]
-	path = bundle/rvm
+[submodule "home/.vim/bundle/rvm"]
+	path = home/.vim/bundle/rvm
 	url = git://github.com/tpope/vim-rvm.git
-[submodule "bundle/gitgutter"]
-	path = bundle/gitgutter
+[submodule "home/.vim/bundle/gitgutter"]
+	path = home/.vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
