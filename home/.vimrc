@@ -140,3 +140,29 @@ let MRU_Use_Current_Window = 1
 highlight lineAdded    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=235
 highlight lineModified guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=235
 highlight lineRemoved  guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=235
+
+"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+" Set paste/nopaste automatically when pasting
+" https://coderwall.com/p/if9mda
+"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function! WrapForTmux(s)
+  if !exists('$TMUX')
+    return a:s
+  endif
+
+  let tmux_start = "\<Esc>Ptmux;"
+  let tmux_end = "\<Esc>\\"
+
+  return tmux_start . substitute(a:s, "\<Esc>", "\<Esc>\<Esc>", 'g') . tmux_end
+endfunction
+
+let &t_SI .= WrapForTmux("\<Esc>[?2004h")
+let &t_EI .= WrapForTmux("\<Esc>[?2004l")
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
