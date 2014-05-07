@@ -78,7 +78,7 @@ set statusline=%<\ %{fnamemodify(getcwd(),\":~\")}\>\ %f\ [%{strlen(&fenc)?&fenc
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " Set up grep
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-set grepprg=$HOME/.vim/bin/ack
+set grepprg=ag
 
 "set complete-=i
 
