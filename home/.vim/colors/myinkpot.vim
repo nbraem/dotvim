@@ -89,6 +89,7 @@ if has('gui_running')
     hi doxygenSpecial               gui=NONE guifg=#fdab60   guibg=NONE
     hi doxygenSpecialMultilineDesc  gui=NONE guifg=#ad600b   guibg=NONE
     hi doxygenSpecialOnelineDesc    gui=NONE guifg=#ad600b   guibg=NONE
+    hi ColorColumn                                           guibg=#2c2d27
 
     if v:version >= 700
         hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
@@ -185,6 +186,7 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     hi   SpellLocal                    cterm=undercurl   ctermfg=NONE   ctermbg=NONE
     hi   SpellCap                      cterm=undercurl   ctermfg=NONE   ctermbg=NONE
     hi   MatchParen                    cterm=NONE        ctermfg=237    ctermbg=120
+    hi   ColorColumn                   cterm=NONE        ctermfg=NONE   ctermbg=235
 endif
 
 " vim: set et :

@@ -141,6 +141,9 @@ highlight lineAdded    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=235
 highlight lineModified guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=235
 highlight lineRemoved  guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=235
 
+" colorcolumn past 120 characters
+let &colorcolumn=join(range(121,999),",")
+
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " Set paste/nopaste automatically when pasting
 " https://coderwall.com/p/if9mda
