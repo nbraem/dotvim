@@ -68,6 +68,9 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set switchbuf=useopen     " when switching to a buffer that is already open in a window, switch to the window
 set tags=tags;/           " search recursively upwards for tags file
 
+set mouse=a               " make mouse work in tmux
+set ttymouse=xterm2
+
 if version >= 703
   set undofile
   set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -122,8 +125,13 @@ nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 " ONLY WORKS in iTerm2!
 "if exists('$ITERM_PROFILE')
     if exists('$TMUX')
-        let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-        let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+        "let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+        "let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+        let &t_SI = "\<Esc>[4 q"
+        let &t_EI = "\<Esc>[2 q"
+        "let &t_SI .= "\<Esc>Ptmux;\<Esc>\<Esc>[4 q\<Esc>\\"
+        "let &t_EI .= "\<Esc>Ptmux;\<Esc>\<Esc>[2 q\<Esc>\\"
+        "autocmd VimLeave * silent !echo -ne "\033Ptmux;\033\033[0 q\033\\"
     else
         let &t_SI = "\<Esc>]50;CursorShape=1\x7"
         let &t_EI = "\<Esc>]50;CursorShape=0\x7"
