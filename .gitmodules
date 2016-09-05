@@ -22,3 +22,6 @@
 [submodule "home/.vim/bundle/puppet"]
 	path = home/.vim/bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+[submodule "home/.vim/bundle/vim-trailing-whitespace"]
+	path = home/.vim/bundle/vim-trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace
