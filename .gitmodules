@@ -25,3 +25,6 @@
 [submodule "home/.vim/bundle/vim-trailing-whitespace"]
 	path = home/.vim/bundle/vim-trailing-whitespace
 	url = https://github.com/bronson/vim-trailing-whitespace
+[submodule "home/.vim/bundle/obsession"]
+	path = home/.vim/bundle/obsession
+	url = git@github.com:tpope/vim-obsession.git
