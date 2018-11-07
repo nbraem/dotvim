@@ -31,3 +31,6 @@
 [submodule "home/.vim/bundle/ale"]
 	path = home/.vim/bundle/ale
 	url = git@github.com:w0rp/ale.git
+[submodule "home/.vim/bundle/json"]
+	path = home/.vim/bundle/json
+	url = git@github.com:elzr/vim-json.git
