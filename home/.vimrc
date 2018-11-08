@@ -178,3 +178,4 @@ endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 set updatetime=100
+let g:ale_virtualenv_dir_names = ['.venv', '.env', 'env', 've-py3', 've', 'virtualenv']
