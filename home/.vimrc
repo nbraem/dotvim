@@ -1,7 +1,15 @@
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call plug#begin('~/.vim/plugged')
+Plug 'jlanzarotta/bufexplorer'
+Plug 'yegappan/mru'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'w0rp/ale'
+call plug#end()
 
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " Set colors
@@ -145,9 +153,9 @@ let MRU_Max_Entries = 100
 let MRU_Use_Current_Window = 1 
 
 " gitgutter colors
-highlight lineAdded    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=235
-highlight lineModified guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=235
-highlight lineRemoved  guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=235
+highlight GitGutterAdd    guifg=#009900 guibg=NONE ctermfg=2 ctermbg=235
+highlight GitGutterChange guifg=#bbbb00 guibg=NONE ctermfg=3 ctermbg=235
+highlight GitGutterDelete  guifg=#ff2222 guibg=NONE ctermfg=1 ctermbg=235
 
 " colorcolumn past 120 characters
 let &colorcolumn=join(range(121,999),",")
@@ -179,3 +187,6 @@ endfunction
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 set updatetime=100
 let g:ale_virtualenv_dir_names = ['.venv', '.env', 'env', 've-py3', 've', 'virtualenv']
+
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
