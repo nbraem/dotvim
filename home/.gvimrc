@@ -1,5 +1,5 @@
 "set guifont=Monaco:h12
-set guifont=Inconsolata-dz:h12
+set guifont=Inconsolata-dz\ for\ Powerline:h13
 set antialias
 set guioptions-=T
 set guioptions-=r
