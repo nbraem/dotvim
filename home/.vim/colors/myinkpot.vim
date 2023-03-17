@@ -118,14 +118,15 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     "hi   StatusLine                    cterm=BOLD        ctermfg=249    ctermbg=17
     "hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=235
     "hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=60
-    hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=12
+    "hi   StatusLine                    cterm=NONE        ctermfg=249    ctermbg=12
+    hi   StatusLine                    cterm=NONE        ctermfg=NONE    ctermbg=61
+    hi   StatusLineNC                  cterm=NONE        ctermfg=61    ctermbg=249
     hi   User1                         cterm=BOLD        ctermfg=48     ctermbg=235
     hi   User2                         cterm=BOLD        ctermfg=61     ctermbg=235
     "hi   StatusLine                    cterm=BOLD        ctermfg=249    ctermbg=235
     hi   User1                         cterm=BOLD        ctermfg=48     ctermbg=12
     hi   User2                         cterm=BOLD        ctermfg=61     ctermbg=12
-    hi   StatusLineNC                  cterm=NONE        ctermfg=249    ctermbg=12
-    hi   VertSplit                     cterm=NONE        ctermfg=249    ctermbg=12
+    hi   VertSplit                     cterm=NONE        ctermfg=61     ctermbg=249
 
     hi   WildMenu                      cterm=BOLD        ctermfg=254    ctermbg=61
     hi   MBENormal                     cterm=NONE        ctermfg=181    ctermbg=16
